@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <% include meta/meta.ejs %>
+        <title><%= params.title %></title>
+        <link href="/static/css/global.css" rel="stylesheet" type="text/css"/>
+        <link href="/static/css/layer.css" rel="stylesheet" type="text/css"/>
+        <link href="/static/css/link.css" rel="stylesheet" type="text/css"/>
+        <link href="/static/css/font.css" rel="stylesheet" type="text/css"/>
+        <link href="/static/css/list.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="header">
+            <% include layer/header.ejs %>
+        </div>
+        <div id="menu">
+            <% include layer/menu.ejs %>
+        </div>
+        <div id="container">
+            <% include layer/container.ejs %>
+        </div>
+        <div id="footer">
+            <% include layer/footer.ejs %>
+        </div>
+    </body>
+</html>

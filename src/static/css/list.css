@@ -1,0 +1,16 @@
+.list_wrapper {
+    margin: 5px 10px 5px 10px;
+}
+
+.list_item {
+    width: 237px;
+    height: 327px;
+    background: azure;
+    float: left;
+    margin: 10px;
+}
+
+.list_item > img {
+    width: 237px;
+    height: 327px;
+}
