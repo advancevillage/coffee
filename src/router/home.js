@@ -6,7 +6,7 @@ const home_router = new RouterService();
 const hc = require('../controller/homeController');
 
 home_router
-    .get('', async (ctx) => {
+    .get('', async (ctx, next) => {
         let params = await hc.result();
         await ctx.render('home', {params});
     });

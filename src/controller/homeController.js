@@ -3,10 +3,10 @@
  */
 const hm = require("../service/homeService");
 
-const result =  () => {
-    let params = {};
-    params.title = hm.Title();
-    params.goods_items = hm.GoodsItems();
+const result =  async  () => {
+    const params = {};
+    params.title = await hm.Title();
+    params.goods_items = await  hm.GoodsItems();
     return params;
 };
 
