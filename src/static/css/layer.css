@@ -11,7 +11,7 @@
     width: auto;
     min-width: 1280px;
     height: 106px;
-    background: ghostwhite;
+    background: whitesmoke;
 }
 
 #container {
@@ -35,7 +35,6 @@
     border: brown;
     width: 66px;
     min-height: 710px;
-    background: brown;
     float: right;
 }
 
@@ -43,13 +42,11 @@
     border: aquamarine;
     width: 66px;
     min-height: 710px;
-    background: aquamarine;
     float: left;
 }
 
 #middle_sidebar {
     border: chartreuse;
     min-height: 710px;
-    background: chartreuse;
     margin: 0 66px 0 66px;
 }

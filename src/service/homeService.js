@@ -1,15 +1,22 @@
 /**
  * homeService
  */
-const request = require('koa2-request');
+const RequestService = require('koa2-request');
 
-const Title =  async () => {
-    let response =  await  request('http://localhost:13147/');
+const TitleProcessor =  async () => {
+    const options = {
+        uri : "http://localhost:13147/",
+        method: 'GET',
+        headers: [
+            'content-type: application/json; charset=utf-8'
+        ]
+    };
+    let response =  await  RequestService(options);
     let title = JSON.parse(response.body);
     return title.data;
 };
 
-const GoodsItems = () => {
+const ListGoodsProcessor = async () => {
     return [{title:"文章1"},{title:"文章2"},{title:"文章2"},{title:"文章2"},{title:"文章2"},
             {title:"文章2"},{title:"文章2"},{title:"文章2"},{title:"文章2"},{title:"文章2"},
             {title:"文章2"},{title:"文章2"},{title:"文章2"},{title:"文章2"},{title:"文章2"},
@@ -17,6 +24,6 @@ const GoodsItems = () => {
 };
 
 module.exports = {
-    Title,
-    GoodsItems
+    TitleProcessor,
+    ListGoodsProcessor
 };

@@ -3,14 +3,14 @@
  */
 const hm = require("../service/homeService");
 
-const result =  async  () => {
+const Wrapper =  async  () => {
     const params = {};
-    params.title = await hm.Title();
-    params.goods_items = await  hm.GoodsItems();
+    params.title = await hm.TitleProcessor();
+    params.goods_items = await  hm.ListGoodsProcessor();
     return params;
 };
 
 module.exports = {
-    result
+    Wrapper
 };
 
