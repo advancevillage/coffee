@@ -1,0 +1,52 @@
+.header_nav_item {
+    display: inline;
+    color: white;
+    margin: 0 10px;
+    font-size: larger;
+    font-family: cursive;
+    font-style: normal;
+}
+.header_nav_item > a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s
+}
+.header_nav_item > a:hover {
+    color: black;
+    background: white;
+    border-radius: 20%;
+}
+
+#header_nav {
+    margin: 0 200px 0 100px;
+    padding: 20px 0;
+}
+
+#header_login {
+    float: right;
+    padding: 20px 0 10px 0;
+}
+
+.header_login_item_login {
+    margin: 0 0 0 0;
+}
+.header_login_item_signup {
+    margin: 0 20px 0 0;
+}
+.header_login_shopping_cart {
+    height: 48px;
+    position: absolute;
+    left: 85%;
+    top: 10px;
+}
+
+#header_logo {
+    float: left;
+}
+
+#header_logo > img {
+    height: 64px;
+    position: absolute;
+}
+
+
