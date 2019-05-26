@@ -18,13 +18,17 @@
 }
 
 #header_nav {
-    margin: 0 200px 0 100px;
+    margin: 0 300px 0 100px;
     padding: 20px 0;
 }
 
 #header_login {
     float: right;
-    padding: 20px 0 10px 0;
+    width: 300px;
+}
+#header_login > ul {
+    margin: 20px 0 0 140px;
+    display: inherit;
 }
 
 .header_login_item_login {
@@ -35,9 +39,10 @@
 }
 .header_login_shopping_cart {
     height: 48px;
-    position: absolute;
-    left: 85%;
-    top: 10px;
+    float: left;
+    display: inherit;
+    padding: 10px 0 0 0;
+    margin: 0 0 0 60px;
 }
 
 #header_logo {
@@ -46,7 +51,7 @@
 
 #header_logo > img {
     height: 64px;
-    position: absolute;
+    display: inherit;
 }
 
 
