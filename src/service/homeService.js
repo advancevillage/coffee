@@ -4,16 +4,23 @@
 const RequestService = require('koa2-request');
 
 const TitleProcessor =  async () => {
+    return "乐淘淘";
+};
+
+const NavigateProcessor = async () => {
     const options = {
         uri : "http://localhost:13147/",
         method: 'GET',
+        qs: {
+            cat: '1'
+        },
         headers: [
             'content-type: application/json; charset=utf-8'
         ]
     };
     let response =  await  RequestService(options);
-    let title = JSON.parse(response.body);
-    return title.data;
+    let ret = JSON.parse(response.body);
+    return ret.data.navigate
 };
 
 const ListGoodsProcessor = async () => {
@@ -25,5 +32,6 @@ const ListGoodsProcessor = async () => {
 
 module.exports = {
     TitleProcessor,
+    NavigateProcessor,
     ListGoodsProcessor
 };

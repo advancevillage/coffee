@@ -11,9 +11,9 @@
 </div>
 <div id="header_nav">
     <ul>
-        <li class="header_nav_item"><a href="#">Home</a></li>
-        <li class="header_nav_item"><a href="#">Home</a></li>
-        <li class="header_nav_item"><a href="#">Home</a></li>
-        <li class="header_nav_item"><a href="#">Home</a></li>
+        <% for(var i = 0; i < params.navigate['main'].length; i++) { %>
+            <% var item = params.navigate['main'][i] %>
+            <li class="header_nav_item"><a href="#"><%= item['value'] %></a></li>
+        <% } %>
     </ul>
 </div>
