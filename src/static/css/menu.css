@@ -1,6 +1,14 @@
-#menu_banner > img {
+.menu_banner_canvas_group {
+    display: flex;
+    align-items: flex-start;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+.menu_banner_canvas {
+    width: 100%;
     height: 106px;
-    min-width: 1440px;
+    background: aquamarine;
+    display: block;
 }
 
 

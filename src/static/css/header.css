@@ -55,12 +55,11 @@
 }
 
 .header_nav_sub_nav {
-    border: 1px solid red;
     position: absolute;
     left: 0;
     top: 64px;
     width: 100%;
-    height: 104px;
+    height: 106px;
     background: black;
     display: none;
     font-size: larger;
