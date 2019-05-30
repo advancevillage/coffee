@@ -10,10 +10,20 @@
     <img src="/static/image/3d/6e/71/c456431fe63affc68b027b9c2126df4f.svg">
 </div>
 <div id="header_nav">
-    <ul>
-        <% for(var i = 0; i < params.navigate['main'].length; i++) { %>
-            <% var item = params.navigate['main'][i] %>
-            <li class="header_nav_item"><a href="#"><%= item['value'] %></a></li>
-        <% } %>
-    </ul>
+    <% if (locals.params.navigate['main']) { %>
+        <ul>
+            <% for(var i = 0; i < params.navigate['main'].length; i++) { %>
+                <% var item = params.navigate['main'][i] %>
+                <li class="header_nav_item <%=item['key']%>"><a href="#"><%= item['value'] %></a></li>
+                <% if(locals.params.navigate[item['key']]) { %>
+                    <div class="header_nav_sub_nav header_nav_sub_nav_<%=item['key']%>">
+                        <% for(var j = 0; j < params.navigate[item['key']].length; j++) { %>
+                            <% var subitem = params.navigate[item['key']][j] %>
+                                <a href="#"><%= subitem['value'] %></a>
+                        <% }%>
+                    </div>
+                <% } %>
+            <% } %>
+        </ul>
+    <%}%>
 </div>

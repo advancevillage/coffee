@@ -3,10 +3,10 @@
  */
 const hm = require("../service/homeService");
 
-const Wrapper =  async  () => {
+const Wrapper =  async  (cat_id) => {
     const params = {};
     params.title = await hm.TitleProcessor();
-    params.navigate = await hm.NavigateProcessor();
+    params.navigate = await hm.NavigateProcessor(cat_id);
     params.goods_items = await  hm.ListGoodsProcessor();
     return params;
 };

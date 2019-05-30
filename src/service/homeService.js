@@ -7,12 +7,12 @@ const TitleProcessor =  async () => {
     return "乐淘淘";
 };
 
-const NavigateProcessor = async () => {
+const NavigateProcessor = async (cat_id) => {
     const options = {
         uri : "http://localhost:13147/",
         method: 'GET',
         qs: {
-            cat: '1'
+            cat: cat_id
         },
         headers: [
             'content-type: application/json; charset=utf-8'

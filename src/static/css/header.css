@@ -54,4 +54,30 @@
     display: inherit;
 }
 
+.header_nav_sub_nav {
+    border: 1px solid red;
+    position: absolute;
+    left: 0;
+    top: 64px;
+    width: 100%;
+    height: 104px;
+    background: black;
+    display: none;
+    font-size: larger;
+    font-family: cursive;
+    font-style: normal
+}
 
+.header_nav_sub_nav > a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    margin: 10px 10px 10px 10px;
+    display: inline-block;
+}
+
+.header_nav_sub_nav > a:hover {
+    color: black;
+    background: white;
+    border-radius: 20%;
+}
