@@ -1,17 +1,22 @@
 #header {
     border: black;
-    width: auto;
+    width: 100%;
     min-width: 1280px;
     height: 64px;
     background: black;
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
 #menu {
     border: red;
-    width: auto;
+    width: 100%;
     min-width: 1280px;
     height: 106px;
     background: whitesmoke;
+    margin-top: 64px;
 }
 
 #container {
