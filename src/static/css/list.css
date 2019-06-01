@@ -1,16 +1,36 @@
 .list_wrapper {
-    margin: 5px 10px 5px 10px;
+    margin: 0;
+    padding: 0;
 }
 
 .list_item {
-    width: 237px;
-    height: 327px;
-    background: azure;
-    float: left;
-    margin: 10px;
+    width: 100%;
+    height: 754px;
+    border: 1px solid red;
+}
+
+.list_item_banner {
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+}
+.list_item_goods {
+    width: 100%;
+    height: 654px;
+    border: 1px solid blue;
 }
 
 .list_item > img {
     width: 237px;
     height: 327px;
+}
+
+.list_item_banner_slide {
+    background: brown;
+}
+
+.list_activity_area {
+    width: 100%;
+    height: 500px;
+    border: 1px solid seagreen;
 }

@@ -1,5 +1,26 @@
 <div class="list_wrapper">
-    <% for(var i = 0; i < params.goods_items.length; i++) { %>
-        <div class="list_item"><img src="/static/image/3d/6e/71/a74877cd9b162f06819e9563a23d6e71.jpg"/></div>
+    <div class="list_activity_area">
+        活动专区
+    </div>
+    <% if (locals.params.navigate['main']) { %>
+        <% for(var i = 0; i < params.navigate['main'].length; i++) { %>
+            <% var item = params.navigate['main'][i] %>
+            <div class="list_item" data-key="<%= item.key %>" data-catid="<%= item.cat %>">
+                <div class="list_item_banner">
+                    <div class="swiper-container list_item_banner_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide list_item_banner_slide">Slide 1</div>
+                            <div class="swiper-slide list_item_banner_slide">Slide 2</div>
+                            <div class="swiper-slide list_item_banner_slide">Slide 3</div>
+                            <div class="swiper-slide list_item_banner_slide">Slide 4</div>
+                        </div>
+                        <div class="swiper-pagination  list_item_banner_pagination"></div>
+                        <div class="swiper-button-next list_item_banner_next"></div>
+                        <div class="swiper-button-prev list_item_banner_prev"></div>
+                    </div>
+                </div>
+                <div class="list_item_goods"></div>
+            </div>
+        <% } %>
     <% } %>
 </div>
