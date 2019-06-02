@@ -33,6 +33,10 @@ function init() {
             });
         });
     });
+    // 活动专区 倒计时初始化
+    $('#list_activity_area_countdown').countdown('2019/06/03', function(event) {
+        $(this).html(event.strftime('%H:%M:%S'));
+    });
 }
 
 init();

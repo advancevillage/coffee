@@ -4,7 +4,7 @@ var menu_swiper = new Swiper('.menu_swiper', {
     loop: true,
     centeredSlides: true,
     autoplay: {
-        delay: 2500,
+        delay: 1500,
         disableOnInteraction: false,
     },
     pagination: {
@@ -19,7 +19,7 @@ var list_item_banner_swiper = new Swiper('.list_item_banner_swiper', {
     loop: true,
     loopFillGroupWithBlank: true,
     autoplay: {
-        delay: 2500,
+        delay: 3000,
         disableOnInteraction: false,
     },
     pagination: {

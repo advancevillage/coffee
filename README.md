@@ -4,6 +4,7 @@
  * koa
  * koa-router
  * swiper           轮播效果
+ * coutdown         倒计时
  
 ## 操作
  * 前提：后端服务需要启动
