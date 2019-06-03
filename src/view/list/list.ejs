@@ -11,6 +11,7 @@
         <% for(var i = 0; i < params.navigate['main'].length; i++) { %>
             <% var item = params.navigate['main'][i] %>
             <div class="list_item" data-key="<%= item.key %>" data-catid="<%= item.cat %>">
+                <!--IndexPage 商品分类轮播-->
                 <div class="list_item_banner">
                     <div class="swiper-container list_item_banner_swiper">
                         <div class="swiper-wrapper">
@@ -24,7 +25,15 @@
                         <div class="swiper-button-prev list_item_banner_prev"></div>
                     </div>
                 </div>
-                <div class="list_item_goods"></div>
+                <!--IndexPage 商品展示区-->
+                <div class="list_item_goods">
+                    <% if (locals.params.goods[item.key]) { %>
+                        <% for(var j = 0; j < params.goods[item.key].length; j++) { %>
+                            <% var sku = params.goods[item.key][j] %>
+                            <div class="list_item_goods_sku" data-sku-key="<%= sku.sku_key%>"></div>
+                        <% } %>
+                    <% } %>
+                </div>
             </div>
         <% } %>
     <% } %>
