@@ -15,10 +15,10 @@
                 <div class="list_item_banner">
                     <div class="swiper-container list_item_banner_swiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide list_item_banner_slide">Slide 1</div>
-                            <div class="swiper-slide list_item_banner_slide">Slide 2</div>
-                            <div class="swiper-slide list_item_banner_slide">Slide 3</div>
-                            <div class="swiper-slide list_item_banner_slide">Slide 4</div>
+                            <div class="swiper-slide list_item_banner_slide"><%= item.value%></div>
+                            <div class="swiper-slide list_item_banner_slide"><%= item.value%></div>
+                            <div class="swiper-slide list_item_banner_slide"><%= item.value%></div>
+                            <div class="swiper-slide list_item_banner_slide"><%= item.value%></div>
                         </div>
                         <div class="swiper-pagination  list_item_banner_pagination"></div>
                         <div class="swiper-button-next list_item_banner_next"></div>
@@ -30,7 +30,19 @@
                     <% if (locals.params.goods[item.key]) { %>
                         <% for(var j = 0; j < params.goods[item.key].length; j++) { %>
                             <% var sku = params.goods[item.key][j] %>
-                            <div class="list_item_goods_sku" data-sku-key="<%= sku.sku_key%>"></div>
+                            <div class="list_item_goods_sku <%=sku.sku_key%>" data-sku-key="<%= sku.sku_key%>" data-sale-attribute="Top 1">
+                                <img src="/static/image/<%= sku.image_url%>">
+                                <div class="list_item_goods_sku_header">
+                                    <div class="list_item_goods_sku_header_right"><%= sku.price%></div>
+                                    <div class="list_item_goods_sku_header_left">
+                                        <canvas class="list_item_goods_sku_header_left_canvas list_item_goods_sku_header_left_canvas_<%=sku.sku_key%>"></canvas>
+                                    </div>
+                                    <div class="list_item_goods_sku_header_mid"></div>
+                                </div>
+                                <div class="list_item_goods_sku_footer">
+                                    商品详情
+                                </div>
+                            </div>
                         <% } %>
                     <% } %>
                 </div>
