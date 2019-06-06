@@ -30,7 +30,7 @@
                     <% if (locals.params.goods[item.key]) { %>
                         <% for(var j = 0; j < params.goods[item.key].length; j++) { %>
                             <% var sku = params.goods[item.key][j] %>
-                            <div class="list_item_goods_sku <%=sku.sku_key%>" data-sku-key="<%= sku.sku_key%>" data-sale-attribute="Top 1">
+                            <div class="list_item_goods_sku <%=sku.sku_key%>" data-sku-key="<%= sku.sku_key%>" data-sale-attribute="热销">
                                 <img src="/static/image/<%= sku.image_url%>">
                                 <div class="list_item_goods_sku_header">
                                     <div class="list_item_goods_sku_header_right"><%= sku.price%></div>

@@ -1,4 +1,4 @@
-#header {
+#header, #goods_header {
     border: black;
     width: 100%;
     min-width: 1280px;
@@ -9,8 +9,11 @@
     left: 0;
     top: 0;
 }
-
-#menu {
+#goods_header{
+    height: 32px;
+}
+/*公共menu样式: 首页 详情页 */
+#menu, #goods_menu {
     border: red;
     width: 100%;
     min-width: 1280px;
@@ -18,16 +21,24 @@
     background: whitesmoke;
     margin-top: 64px;
 }
+#goods_menu {
+    height: 500px;
+    margin-top: 32px;
+}
 
-#container {
+#container, #goods_container{
     border: blue;
-    width: auto;
+    width: 100%;
     min-width: 1280px;
     min-height: 710px;
     background: white;
 }
+#goods_container {
+    height: 300px;
+    background: deepskyblue;
+}
 
-#footer {
+#footer, #goods_footer {
     float: left;
     bottom: 0;
     width: 100%;

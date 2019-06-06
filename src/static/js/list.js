@@ -35,7 +35,7 @@ function GoodsSaleAttribute(class_id, value) {
         closed: true
     }).drawText({
         strokeStyle: '#f00',
-        strokeWidth: 3,
+        strokeWidth: 2,
         x: 55, y: 55,
         fontSize: 48,
         fontFamily: 'cursive',
