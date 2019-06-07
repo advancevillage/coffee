@@ -14,7 +14,6 @@
 }
 /*公共menu样式: 首页 详情页 */
 #menu, #goods_menu {
-    border: red;
     width: 100%;
     min-width: 1280px;
     height: 106px;
@@ -27,15 +26,13 @@
 }
 
 #container, #goods_container{
-    border: blue;
     width: 100%;
     min-width: 1280px;
     min-height: 710px;
     background: white;
 }
 #goods_container {
-    height: 300px;
-    background: deepskyblue;
+    min-height: 400px;
 }
 
 #footer, #goods_footer {
@@ -47,22 +44,39 @@
     clear: both;
 }
 
-#right_sidebar {
+#right_sidebar, .goods_container_right{
     border: brown;
     width: 66px;
     min-height: 710px;
     float: right;
 }
+.goods_container_right {
+    min-height: 610px;
+    width: 200px;
+    border: 1px solid brown
+}
 
-#left_sidebar {
+#left_sidebar, .goods_container_left {
     border: aquamarine;
     width: 66px;
     min-height: 710px;
     float: left;
 }
 
-#middle_sidebar {
+.goods_container_left {
+    min-height: 610px;
+    width: 200px;
+    border: 1px solid brown
+}
+
+#middle_sidebar, .goods_container_mid{
     border: chartreuse;
     min-height: 710px;
     margin: 0 66px 0 66px;
+}
+
+.goods_container_mid {
+    min-height:  610px;
+    margin: 0 200px 0 200px;
+    border: 1px solid brown
 }

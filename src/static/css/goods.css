@@ -1,0 +1,18 @@
+.goods_menu_show {
+    z-index: 80;
+}
+.goods_menu_show > img {
+    height: 500px;
+    width: 100%;
+}
+.goods_menu_colors_show {
+    width: 60px;
+    border: 1px solid blue;
+    height: 500px;
+    z-index: 85;
+    position: absolute;
+}
+.goods_menu_colors_show_canvas {
+    cursor: pointer;
+    float: left;
+}
