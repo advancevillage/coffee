@@ -8,7 +8,7 @@ function ShowGoodsColors() {
             fillStyle: '#36b',
             strokeWidth: 0,
             x: 15, y: 15,
-            radius: 12,
+            radius: 11,
             ccw: true,
             inDegrees: false
 
