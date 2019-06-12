@@ -6,8 +6,7 @@
     width: 100%;
 }
 .goods_menu_colors_show {
-    width: 60px;
-    border: 1px solid blue;
+    width: 120px;
     height: 500px;
     z-index: 85;
     position: absolute;
