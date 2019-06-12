@@ -6,7 +6,9 @@
         <% if (locals.params.goods['sku_attr'] && locals.params.goods['sku_attr']['colors']) { %>
             <% var colors = params.goods['sku_attr']['colors'] %>
             <% for (var i = 0; i < colors.length; i++ ) { %>
-                <canvas class="goods_menu_colors_show_canvas goods_menu_colors_show_canvas<%=i%>" width="30" height="30" data-color="<%=colors[i]%>"></canvas>
+                <div class="goods_menu_colors_show_canvas_bg">
+                    <div class="goods_menu_colors_show_canvas goods_menu_colors_show_canvas<%=i%>" width="30" height="30" data-color="<%=colors[i]%>"></div>
+                </div>
             <% } %>
         <% } %>
     </div>
@@ -35,7 +37,9 @@
                     <% if (locals.params.goods['sku_attr'] && locals.params.goods['sku_attr']['colors']) { %>
                         <% var colors = params.goods['sku_attr']['colors'] %>
                         <% for (var i = 0; i < colors.length; i++ ) { %>
-                        <canvas class="goods_menu_colors_show_canvas goods_menu_colors_show_canvas<%=i%>" width="30" height="30" data-color="<%=colors[i]%>"></canvas>
+                        <div class="goods_menu_colors_show_canvas_bg">
+                            <div class="goods_menu_colors_show_canvas goods_menu_colors_show_canvas<%=i%>" width="30" height="30" data-color="<%=colors[i]%>"></div>
+                        </div>
                         <% } %>
                     <% } %>
                 </div>
