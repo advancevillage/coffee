@@ -3,9 +3,16 @@ const goods_menu_colors_show_canvas = "goods_menu_colors_show_canvas";
 const ClassSelector = ".";
 
 function ShowGoodsColors() {
-    $(ClassSelector + goods_menu_colors_show_canvas)
+    $(ClassSelector + goods_menu_colors_show_canvas).each(function (index, value) {
+        let color = $(value).attr("data-color");
+        SetGoodsColors(ClassSelector + goods_menu_colors_show_canvas + index, color)
+    });
+}
+
+function SetGoodsColors(key, color) {
+    $(key)
         .drawArc({
-            fillStyle: '#36b',
+            fillStyle: color,
             strokeWidth: 0,
             x: 15, y: 15,
             radius: 11,
@@ -13,13 +20,13 @@ function ShowGoodsColors() {
             inDegrees: false
 
         })
-        .drawLine({
-            strokeStyle: '#fff',
-            strokeWidth: 2,
-            x1: 9,  y1: 16,
-            x2: 13, y2: 20,
-            x3: 22, y3: 12,
-        });
+        // .drawLine({
+        //     strokeStyle: '#fff',
+        //     strokeWidth: 2,
+        //     x1: 9,  y1: 16,
+        //     x2: 13, y2: 20,
+        //     x3: 22, y3: 12,
+        // });
 }
 
 ShowGoodsColors();

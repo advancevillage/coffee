@@ -24,7 +24,7 @@ const NavigateProcessor = async (cat_id,page_id) => {
 
 const ListGoodsProcessor = async (cat_id,page_id) => {
     const options = {
-        uri : "http://localhost:13147/",
+        uri : "http://localhost:13147/goods/",
         method: 'GET',
         qs: {
             cat: cat_id,
@@ -36,7 +36,7 @@ const ListGoodsProcessor = async (cat_id,page_id) => {
     };
     let response =  await  RequestService(options);
     let ret = JSON.parse(response.body);
-    return ret.data.goods
+    return ret.data
 };
 
 module.exports = {
