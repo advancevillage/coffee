@@ -44,11 +44,14 @@
                     <% } %>
                 </div>
                 <div class="goods_container_detail_attr_size">
-                    <span class="goods_container_detail_attr_size_label">S</span>
-                    <span class="goods_container_detail_attr_size_label">XS</span>
-                    <span class="goods_container_detail_attr_size_label">M</span>
-                    <span class="goods_container_detail_attr_size_label">L</span>
-                    <span class="goods_container_detail_attr_size_label">XXL</span>
+                    <% if (locals.params.goods['sku_attr'] && locals.params.goods['sku_attr']['sizes']) { %>
+                        <% var sizes = params.goods['sku_attr']['sizes'] %>
+                        <% for (var i = 0; i < sizes.length; i++) { %>
+                        <div class="goods_container_detail_attr_size_label_bg">
+                            <div class="goods_container_detail_attr_size_label goods_container_detail_attr_size_label<%=i%>"><%=sizes[i]%></div>
+                        </div>
+                        <%}%>
+                    <%}%>
                 </div>
                 <div class="goods_container_detail_attr_event">
                     <div class="goods_container_detail_attr_event_addCart"></div>
